@@ -11,6 +11,9 @@ const Wrapper = styled.div`
 padding: 20px;
 display: flex;
 justify-content: space-between;
+@media only screen and (max-width: 480px) {
+padding: 10px;
+}
 `
 
 const List = styled.ul`
@@ -18,10 +21,15 @@ padding: 0;
 margin: 0;
 list-style: none;
 display: flex;
+
 `
 
 const ListItem = styled.li`
 margin-right: 20px;
+@media only screen and (max-width: 480px) {
+margin-right: 10px;
+font-size: .9rem;
+}
 `
 
 const Copyright = styled.span`
@@ -29,6 +37,12 @@ const Copyright = styled.span`
 span {
 
     font-size: 1.2rem
+}
+
+@media only screen and (max-width: 480px) {
+font-size: 12px;
+
+
 }
 `
 

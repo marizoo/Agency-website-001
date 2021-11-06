@@ -47,6 +47,9 @@ background-color: crimson;
 `
 
 const App = () => {
+
+  const smallScreen = window.screen.width <= 480 ? true : false;
+
   return (
     <>
      <Container>
@@ -60,7 +63,7 @@ const App = () => {
     </Container>
     <Container>
       <Service />
-      <ServiceShape />
+      {!smallScreen && <ServiceShape />}
     </Container>
     <Container>
       <Price />
